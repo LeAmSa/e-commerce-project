@@ -20,6 +20,7 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 
 /* HEADER STYLES */
@@ -39,28 +40,58 @@ ul, li, a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: 700;
+}
+
+.nav_list a {
+    color: #000;
+}
+
+.nav_list a:hover {
+    color: #FF0000;
 }
 
 #search-ct {
-    border: 1px dashed yellow;
+    position: relative;
     display: flex;
     align-items: center;
 }
 
+#search-ct img {
+    position: absolute;
+    height: 20px;
+    left: 5px;
+    line-height: 35px;
+}
+
+#search-ct input {
+    height: 35px;
+    padding: 2px 2px 2px 30px;
+    outline: none;
+    border: none;
+}
+
+
 /* MAIN STYLES */
 
 .main-grid-ct {
-    /* border: 1px dashed black; */
+    background-color: var(--background);
     height: 90vh;
+    max-width: 1300px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 10vh;
+}
+
+.featured-ct {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 90vh 10vh;
 }
 
 .info-ct {
     padding: 15vh 20px 30px 20px;
     background: #fff;
-
 }
 
 .info-ct h1 {
@@ -77,9 +108,18 @@ ul, li, a {
     margin-bottom: 10px;
 }
 
+.info-ct button {
+    padding: 20px 50px;
+    font-weight: 700;
+    border: none;
+    background-color: #FF0000;
+    color: #fff;
+    cursor: pointer;
+}
+
 .product-grid-ct {
     display: grid;
-    height: 90vh;
+    height: 100%;
     padding: 10vh 10px 25px 10px;
     background: var(--main-background);
     grid-template-columns: repeat(3, 1fr);
@@ -88,12 +128,27 @@ ul, li, a {
     column-gap: 15px;
 }
 
+#main_img {
+    width: 40%;
+}
+
+.product-grid-ct img {
+    width: 100%;
+    /* border: 1px dashed blue; */
+}
+
 .product-grid-ct img:first-child {
     grid-column: span 3;
 }
 
 .img-ct {
-    background: var(--background);
+    /* border: 1px dashed red; */
+    width: 100%;
+}
+
+.img-ct:hover {
+    border-bottom: 3px solid #FF0000;
+    cursor: pointer;
 }
 
 /* FOOTER STYLES */
