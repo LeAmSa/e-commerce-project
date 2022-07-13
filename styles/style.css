@@ -59,7 +59,7 @@ ul, li, a {
 
 .info-ct {
     padding: 15vh 20px 30px 20px;
-    background: var(--background);
+    background: #fff;
 
 }
 
@@ -79,6 +79,7 @@ ul, li, a {
 
 .product-grid-ct {
     display: grid;
+    height: 90vh;
     padding: 10vh 10px 25px 10px;
     background: var(--main-background);
     grid-template-columns: repeat(3, 1fr);
@@ -109,10 +110,16 @@ ul, li, a {
     flex-basis: 25%;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    background: #fff;
+    transition: all .3s ease;
 }
 
-.footer-ct div:first-child {
-    max-height: 10vh;
+.footer-ct div:hover {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
 }
 
 .footer-ct div:last-child {
@@ -121,3 +128,6 @@ ul, li, a {
     background-color: #000;
 }
 
+.footer-ct img:hover {
+    cursor: pointer;
+}
