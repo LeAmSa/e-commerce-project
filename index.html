@@ -11,20 +11,21 @@
 <body>
     <header>
         <nav>
+            <div class="menu-btn">
+                <div class="menu-btn_burguer"></div>
+            </div>
+            <a href="#"><img src="img/logo.svg" alt="Logo"></a>
             <ul class="nav_list">
-                <li>
-                    <a href="#"><img src="img/logo.svg" alt="Logo"></a>
-                </li>
-                <li><a href="#">HOMEM</a></li>
-                <li><a href="#">MULHER</a></li>
-                <li><a href="#">CRIANÇA</a></li>
-                <li><a href="#">CUSTOMIZAR</a></li>
-                <li id="search-ct">
-                    <img src="img/icon-search.svg" alt="Search logo">
-                    <input type="text" placeholder="Pesquisar">
-                </li>
-                <li><a href="#"><img src="img/icon-bag.svg" alt="Bag logo"></a></li>
+                <li><a href="#">HOMEM</a><div class="arrow">&gt;</div></li>
+                <li><a href="#">MULHER</a><div class="arrow">&gt;</div></li>
+                <li><a href="#">CRIANÇA</a><div class="arrow">&gt;</div></li>
+                <li><a href="#">CUSTOMIZAR</a><div class="arrow">&gt;</div></li>
             </ul>
+            <div id="search-ct">
+                <img src="img/icon-search.svg" alt="Search logo">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <a href="#"><img src="img/icon-bag.svg" alt="Bag logo"></a>
         </nav>
     </header>
     <main class="main-grid-ct">
@@ -51,5 +52,6 @@
             <div>EXPLORE MAIS &#10132;</div>
         </section>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
