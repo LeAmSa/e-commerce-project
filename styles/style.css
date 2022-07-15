@@ -31,7 +31,7 @@ ul, li, a {
 }
 
 nav {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     position: absolute;
     display: flex;
     width: 100%;
@@ -351,10 +351,17 @@ nav {
 
     .footer-ct {
         height: 8vh;
+        flex-direction: column;
+    }
+
+    .footer-ct img {
+        padding: 0 10px;
     }
 
     .footer-ct div {
         font-size: 11px;
+        padding: 15px 0;
+        border-bottom: 1px solid lightgray;
     }
    
 }
