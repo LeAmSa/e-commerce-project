@@ -31,7 +31,7 @@ ul, li, a {
 }
 
 nav {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     position: absolute;
     display: flex;
     width: 100%;
@@ -144,19 +144,12 @@ nav {
 
 /* MAIN STYLES */
 
-.main-grid-ct {
-    background-color: var(--background);
-    height: 90vh;
-    max-width: 1300px;
-    display: grid;
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 90vh 10vh;
-}
-
 .featured-ct {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    height: 100%;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .info-ct {
@@ -189,7 +182,7 @@ nav {
 
 .product-grid-ct {
     display: grid;
-    height: 100%;
+    height: 90vh;
     padding: 10vh 10px 25px 10px;
     background: var(--main-background);
     grid-template-columns: repeat(3, 1fr);
@@ -198,21 +191,19 @@ nav {
     column-gap: 15px;
 }
 
+#main-img-ct {
+    grid-column: span 3;
+}
+
 #main_img {
-    width: 40%;
+    width: 100%;
 }
 
 .product-grid-ct img {
     width: 100%;
-    /* border: 1px dashed blue; */
-}
-
-.product-grid-ct img:first-child {
-    grid-column: span 3;
 }
 
 .img-ct {
-    /* border: 1px dashed red; */
     border-bottom: 3px solid transparent;
     width: 100%;
     transition: all .4s ease;
@@ -221,14 +212,15 @@ nav {
 .img-ct:hover {
     border-bottom: 3px solid #FF0000;
     cursor: pointer;
-}
+} 
 
 /* FOOTER STYLES */
 .footer-ct {
     display: flex;
+    max-width: 1300px;
+    margin: auto;
     height: 10vh;
     width: 100%;
-    grid-column: span 2;
 }
 
 .footer-ct div {
@@ -271,6 +263,9 @@ nav {
     nav {
         justify-content: space-between;
         padding: 0 20px;
+        position: fixed;
+        height: 8vh;
+        background-color: #fff;
     }
 
     #search-ct img {
@@ -283,7 +278,7 @@ nav {
 
     .nav_list {
         position: absolute;
-        top: 10vh;
+        top: 8vh;
         left: 0;
         flex-direction: column;
         gap: 0;
@@ -325,11 +320,6 @@ nav {
         opacity: 100%;
         transform: translateX(0);
     }
-
-    #main_img {
-        width: 90%;
-    }
-
 }
 
 @media (max-width: 700px) {
@@ -337,10 +327,24 @@ nav {
         grid-template-columns: 1fr;
     }
 
-    #main_img {
-        width: 100%;
-        grid-column: 1;
+    .product-grid-ct {
+        grid-row: 1 / 2;
     }
 
+    .info-ct {
+        padding-top: 5px;
+    }
+
+    .info-ct h1 {
+        font-size: 2em;
+    }
+
+    .footer-ct {
+        height: 5vh;
+    }
+
+    .footer-ct div {
+        font-size: 11px;
+    }
    
 }
