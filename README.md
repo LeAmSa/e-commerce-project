@@ -70,7 +70,10 @@ The objective was to develop an e-commerce product homepage example.
    ```sh
    cd e-commerce-project
    ```
-3. Open `index.html`
+3. Open project in [Visual Studio Code](https://code.visualstudio.com/), for example
+	 ```sh
+   code .
+   ```
 
 
 <!-- Features -->
